@@ -3,13 +3,7 @@ function hideElement() {
     document.getElementById("container-main").style.display = "none";
     document.getElementById("lose").style.display = "block";
 }
-const photo = {
-    rain: "./ascent/raining.png",
-    snow: "./ascent/snow.png", //  Kar Yağışlı
-    snowing: "./ascent/snowing.png", //Karla karasik yagmur
-    cloudy: "./ascent/cloudy.png", // Parçalı bulutlu
-    sun: "./ascent/cloudy.png"
-};
+
 async function getWeather() {
     const apiKey = 'e7704bc895b4a8d2dfd4a29d404285b6\n';
     const city = document.getElementById('city-input').value;
